@@ -1,0 +1,22 @@
+<template name="pictures">
+  
+  <ul>
+  {{#each pictures}}
+    <li>
+      <a href="discussion/{{_id}}"><img src="{{url}}" alt=""></a>
+      <div class="comments">Comments: {{discussion.length}}</div>
+      <div class="rating">Rating: {{rating}}</div>
+      
+    </li>
+  {{/each}}
+  </ul>
+
+  <form>
+    <fieldset>
+      <legend>Add a new picture</legend>
+      <input type="url" id="picture" required>
+      <button type="submit">Add</button>
+    </fieldset>
+  </form>
+
+</template>

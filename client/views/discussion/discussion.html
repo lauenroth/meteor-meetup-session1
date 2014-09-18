@@ -1,0 +1,29 @@
+<template name="discussion">
+
+  <a href="/">Back</a>
+
+  <div class="rating">
+    {{rating}}
+    <img src="http://pointersviewpoint.files.wordpress.com/2010/08/thu.jpg" alt="" class="like" width="30">
+  </div>
+  
+  <div id="picture_wrapper"><img src="{{url}}" alt=""></div>
+  
+  {{#each discussion}}
+  <fieldset>
+    <legend>{{user_name}}</legend>
+    <p>{{comment}}</p>
+  </fieldset>
+  {{/each}}
+
+  <form>
+    <fieldset>
+      <legend>Add new comment</legend>
+      <input type="text" id="name" placeholder="Your name" required><br>
+      <textarea id="comment" cols="30" rows="10" placeholder="Your comment" required></textarea><br>
+      <button type="submit">Add comment</button>
+    </fieldset>
+
+  </form>
+
+</template>

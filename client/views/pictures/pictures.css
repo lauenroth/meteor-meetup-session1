@@ -1,0 +1,12 @@
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  width: 270px;
+  margin-right: 10px;
+}
+li .comments {
+  float: right;
+}

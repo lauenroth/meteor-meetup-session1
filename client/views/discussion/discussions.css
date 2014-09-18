@@ -1,0 +1,15 @@
+img {
+  max-width: 250px;
+  border: 10px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#picture_wrapper {
+  margin: 20px auto;
+  max-width: 250px;
+}
+
+.like {
+  cursor: pointer;
+}
