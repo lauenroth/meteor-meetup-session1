@@ -13,3 +13,8 @@ img {
 .like {
   cursor: pointer;
 }
+
+.rating {
+  float: right;
+  text-align: center;
+}
